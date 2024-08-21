@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+  </head>
+  <body>
+    <form>
+        <label for="ExpenseAmount">Choose Expenseamount:</label>
+        <input type="number" min="0" max="100" id="ExpenseAmount" name="ExpenseAmount">
+        <label for="Description" >Choose Description:</label>
+        <input type="text" id="Description" name="Description">
+        <label for="Category" name="Category">Choose a Category</label>
+        <select class="form-select" aria-label="Default select example" id="Category">
+            <option selected>Select</option>
+            <option value="fuel" class="category" name="Category">Fuel</option>
+            <option value="movie" class="category" name="Category">Movie</option>
+            <option value="food" class="category" name="Category">Food</option>
+        </select>
+        <button type="submit" class="btn btn-outline-secondary">Add Expense</button>
+    </form>
+    <ul class="listitems">
+
+    </ul>
+    <script src="index.js"></script>
+    
+  </body>
+</html>
